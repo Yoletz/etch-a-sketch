@@ -1,0 +1,19 @@
+body {
+  height: 93vh;
+}
+
+#container {
+  height: 100%;;
+  display: flex;
+  margin: 1vh;
+  border: 2px solid black;
+}
+
+#container > * {
+  display: flex;
+  flex-direction: column;
+}
+
+#container * {
+  flex: 1;
+}
