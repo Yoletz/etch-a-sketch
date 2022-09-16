@@ -51,12 +51,12 @@ function getPixels() {
   function getValue(dimension) {
     let val = null;
     val = prompt(`Enter ${dimension} (10 to 100)`);
-    if (val == null) return;
+    if (val === null) return;
 
     while (true) {
-      if (val < 10 || length > 100) {
-        val = prompt("Invalid input! (10 to 100) only");
-        if (val == null) return;
+      if (val < 10 || val > 100) {
+        val = prompt("Invalid input! (10 to 100 only)");
+        if (val === null) return;
       } else {
         return val;
       }
@@ -64,9 +64,9 @@ function getPixels() {
   }
 
   tempWidth = getValue("Width");
-  if (tempWidth == null) return;
+  if (tempWidth === undefined) return;
   tempHeight = getValue("Height");
-  if (tempHeight == null) return;
+  if (tempHeight === undefined) return;
 
   width = +tempWidth;
   height = +tempHeight;
