@@ -24,7 +24,7 @@ function fill(width, height) {
         
         if (e.buttons === 1) {
           row.style.backgroundColor = 
-            `hsl(${colorNum(i + j, 720)}, 
+            `hsl(${colorNum(i + j, 720)},
               ${colorNum(2 * (i + j), 100)}%,
               ${colorNum(((height + width) / 2) + i + j, 50)}%)`;
         }
@@ -55,7 +55,7 @@ function getPixels() {
 
     while (true) {
       if (val < 10 || length > 100) {
-        val = prompt("Invalid input enter only (10 to 100) only");
+        val = prompt("Invalid input! (10 to 100) only");
         if (val == null) return;
       } else {
         return val;
