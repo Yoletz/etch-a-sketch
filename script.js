@@ -20,7 +20,7 @@ function fill(width, height) {
       row.addEventListener("mouseover", function (e) {
         function colorNum(num, range) {
           return Math.floor((num / (width + height)) * range);
-        }25
+        }
         
         if (e.buttons === 1) {
           row.style.backgroundColor = 
