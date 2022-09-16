@@ -1,6 +1,6 @@
 "use strict";
 
-let height = 50;
+let height = 25;
 let width = 50;
 
 const setPixels = document.querySelector("#pixels");
@@ -20,7 +20,7 @@ function fill(width, height) {
       row.addEventListener("mouseover", function (e) {
         function colorNum(num, range) {
           return Math.floor((num / (width + height)) * range);
-        }
+        }25
         
         if (e.buttons === 1) {
           row.style.backgroundColor = 
@@ -81,4 +81,4 @@ function removeAllChildNodes(parent) {
   }
 }
 
-fill(height, width);
+fill(width, height);
